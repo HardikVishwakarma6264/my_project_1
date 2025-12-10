@@ -268,36 +268,7 @@ exports.accesscoursedetail = async (req, res) => {
 };
 
 
-// exports.getInstructorCourses = async (req, res) => { 
-//   try {
-//     const instructorId = req.user.id;
 
-//     const instructorCourses = await Course.find({ instructor: instructorId })
-//   .populate("category")
-//   .populate({
-//     path: "coursecontent",
-//     populate: {
-//       path: "subsection",
-//       select: "timeduration", 
-//     },
-//   })
-//   .sort({ createdAt: -1 })
-//   .exec();
-
-
-//     return res.status(200).json({
-//       success: true,
-//       message: "Instructor courses fetched successfully",
-//       data: instructorCourses,
-//     });
-//   } catch (error) {
-//     console.error("Error fetching instructor courses:", error);
-//     return res.status(500).json({
-//       success: false,
-//       message: "Failed to fetch instructor courses",
-//     });
-//   }
-// };
 
 exports.getInstructorCourses = async (req, res) => {
   try {
@@ -336,7 +307,7 @@ exports.getInstructorCourses = async (req, res) => {
 
 
 
-// Edit Course Controller
+
 
 
 exports.editCourse = async (req, res) => {

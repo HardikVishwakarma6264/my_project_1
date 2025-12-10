@@ -38,7 +38,7 @@ function App() {
   const { user } = useSelector((state) => state.auth); // ✅ get user from Redux
 
   return (
-    <div className="w-screen min-h-screen bg-[#121212] flex flex-col font-inter">
+    <div className="w-screen min-h-screen bg-[#121212] flex flex-col font-inter ">
       <Navbar />
       <Routes>
         {/* Public Routes */}

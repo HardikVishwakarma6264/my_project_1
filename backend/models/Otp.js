@@ -11,7 +11,7 @@ otp:{
   type:String,
   required:true,
 },
-createdat:{
+createdAt:{
   type:Date,   
   default:Date.now(),
   expires:5*60,

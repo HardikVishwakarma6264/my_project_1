@@ -49,7 +49,7 @@ const Course = new moongose.Schema({
     },
   ],
   instruction: {
-    type: String,
+    type: [String],
   },
 
   status: {

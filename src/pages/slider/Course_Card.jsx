@@ -18,7 +18,7 @@ const Course_Card = ({ course, height }) => {
       <Link to={`/courses/${course._id}`}>
         <div className=" md:flex-row gap-4">
           {/* Image */}
-          <div className="flex-shrink-0 w-full md:w-[500px]">
+          <div className="flex-shrink-0 w-full md:w-[501px]">
             <img
               src={course?.thumbnail}
               alt="course ka img"

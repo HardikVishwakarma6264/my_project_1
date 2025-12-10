@@ -27,10 +27,10 @@
 import React from 'react';
 
 const Stats = [
-  { count: '0K+', label: 'Active Students' },
-  { count: '0+', label: 'Mentors' },
-  { count: '0+', label: 'Courses' },
-  { count: '0+', label: 'Awards' },
+  { count: '1K+', label: 'Active Students' },
+  { count: '8+', label: 'Mentors' },
+  { count: '18+', label: 'Courses' },
+  { count: '1+', label: 'Awards' },
 ];
 
 const Aboutstate = () => {

@@ -185,9 +185,13 @@ const Home = () => {
             </div>
           </div>
 
-          <Timelinesection />
-          <Learninglanguagesection />
+          
         </div>
+      </div>
+
+      <div className="bg-white text-black mb-4">
+        <Timelinesection />
+        <Learninglanguagesection />
       </div>
 
       <Instructorsection />
@@ -197,4 +201,18 @@ const Home = () => {
 };
 
 export default Home;
+
+
+{/* <div className="h-[170px]">
+        <div className="flex gap-10  justify-center absolute right-[400px] ml-[350px]">
+          {courses.map((element, index) => (
+            <Coursecard
+              key={index}
+              carddata={element}
+              currentCard={currentCard}
+              setCurrentCard={setCurrentCard}
+            />
+          ))}
+        </div>
+      </div> */}
 

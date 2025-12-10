@@ -82,7 +82,8 @@ const ReviewSliderdo = () => {
                     {item?.user?.firstname ?? "Anonymous"}{" "}
                     {item?.user?.lastname ?? ""}
                   </p>
-                  <p className="text-base text-gray-200 italic">
+                  
+                  <p className="text-base text-gray-400 italic">
                     {item?.course?.coursename ?? "No course"}
                   </p>
                 </div>

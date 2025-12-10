@@ -237,7 +237,7 @@ const CourseBuilderForm = () => {
             id="sectionName"
             placeholder="Add section name"
             {...register("sectionName", { required: true })}
-            className="w-full rounded-md border border-richblack-500 bg-richblack-900 p-3 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full rounded-md border border-richblack-500 bg-richblack-900 p-3 text-black focus:outline-none focus:ring-2 focus:ring-yellow-400"
           />
           {errors.sectionName && (
             <span className="text-red-400 text-sm">Section Name is required</span>

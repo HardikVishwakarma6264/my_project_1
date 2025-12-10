@@ -110,23 +110,29 @@ const Coursebuy = () => {
 
     // Yaha payload me courseData bhejo
     dispatch(addToCart(courseData));
+    
     toast.success("Course added to cart 🛒");
   };
 
   return (
     <div className="text-white bg-[#121212] min-h-full mb-8">
-      <div className="h-[450px] w-full bg-gray-700  ">
-        <div className="w-[550px] h-[300px]  ml-[500px] relative top-[130px] ">
-          <h1 className="text-6xl font-bold">{coursename}</h1>
-          <p className="text-2xl mt-4">{`${coursename} By ${instructor?.firstname} ${instructor?.lastname}`}</p>
+
+
+      {/* <div className="h-[450px] w-full bg-gray-700  ">
+        <div className="w-[550px] h-[300px]  ml-[500px] relative top-[130px] "> */}
+        <div className="h-auto md:h-[450px] w-full bg-gray-700 px-4">
+  <div className="w-full md:w-[550px] h-auto md:h-[300px] mx-auto md:ml-[500px] relative top-8 md:top-[130px]">
+
+          <h1 className="text-xl md:text-2xl lg:text-4xl font-bold">{coursename}</h1>
+          <p className="text-lg md:text-xl lg:text-2xl mt-4">{`${coursename} By ${instructor?.firstname} ${instructor?.lastname}`}</p>
           {/* Ratings */}
 
           <div className="flex items-center gap-2 mt-3">
-            <span className="text-yellow-400 text-xl font-bold">
+            <span className="text-yellow-400 text-base md:text-lg lg:text-xl font-bold">
               {avgreviewcount?.toFixed(1) || 0}
             </span>
             <RatingStars value={avgreviewcount} readOnly={true} size={24} />
-            <span className="text-base ml-2">
+            <span className="text-xs md:text-sm lg:text-base ml-2">
               ({courseData?.ratingandreview?.length || 0} reviews)
             </span>
             <span className="text-base ml-2">
@@ -134,8 +140,8 @@ const Coursebuy = () => {
             </span>
           </div>
 
-          <p className="text-2xl mt-4">{`By ${instructor?.firstname} ${instructor?.lastname}`}</p>
-          <p className="text-xl mt-4 flex items-center gap-2">
+          <p className="text-lg md:text-xl lg:text-2xl mt-4">{`By ${instructor?.firstname} ${instructor?.lastname}`}</p>
+          <p className="text-base md:text-lg lg:text-xl mt-4 flex items-center gap-2">
             <AiOutlineClockCircle size={20} />
             Created at {createdDate.toLocaleDateString()}{" "}
             {createdDate.toLocaleTimeString([], {
@@ -149,19 +155,29 @@ const Coursebuy = () => {
         </div>
       </div>
 
-      <div className=" ml-[450px] mt-8">
-        <div className="mt-8 border border-gray-700   rounded-md  w-[800px] ">
-          <h2 className="text-4xl font-bold mb-2 m-4">What you'll learn</h2>
-          <div className="bg- text-gray-200 p-4 rounded-lg w-[800px] h-[50px]  mt-2 ml-8">
+
+
+
+
+
+      <div className=" mt-8 px-4 md:ml-[450px]">
+        {/* <div className="mt-8 border border-gray-700   rounded-md  w-[800px] "> */}
+        <div className="mt-8 border border-gray-700 rounded-md w-full md:w-[800px]">
+
+          <h2 className="text-xl md:text-2xl lg:text-4xl font-bold mb-2 m-4">What you'll learn</h2>
+          {/* <div className="bg- text-gray-200 p-4 rounded-lg w-[800px] h-[50px]  mt-2 ml-8"> */}
+          <div className="text-gray-200 p-4 rounded-lg w-full md:w-[800px] h-auto mt-2 md:ml-8">
+
             {whatwillyoulearn || "No details provided."}
           </div>
         </div>
 
         {/* Course Content */}
-        <div className="mt-10 w-[800px]">
-          <h2 className="text-4xl font-semibold mb-4">Course Content</h2>
+        {/* <div className="mt-10 w-[800px]"> */}
+        <div className="mt-10 w-full md:w-[800px]">
+          <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold mb-4">Course Content</h2>
 
-          <p className="text-base text-gray-300 mb-2">
+          <p className="text-xs md:text-sm lg:text-base text-gray-300 mb-2">
             {coursecontent.length} section(s),{" "}
             {coursecontent.reduce(
               (acc, section) => acc + (section?.subsection?.length || 0),
@@ -212,7 +228,9 @@ const Coursebuy = () => {
         </div>
       </div>
 
-      <div className="w-[450px] h-[700px] rounded-lg p-5 bg-gray-800  absolute top-[150px] left-[1300px] ">
+      {/* <div className="w-[450px] h-[700px] rounded-lg p-5 bg-gray-800  absolute top-[150px] left-[1300px] "> */}
+      <div className="w-full md:w-[450px] h-auto md:h-[700px] rounded-lg p-5 bg-gray-800 relative md:absolute mt-10 md:mt-0 md:top-[150px] md:left-[1300px]">
+
         <img
           src={thumbnail}
           alt="Course Thumbnail"
@@ -222,7 +240,7 @@ const Coursebuy = () => {
 
         {isEnrolled ? (
           <button
-            className="w-[400px] bg-green-500 hover:bg-green-400 text-black font-bold py-2 px-4 rounded mb-3 mt-3 ml-2"
+            className="w-full md:w-[400px] bg-green-500 hover:bg-green-400 text-black font-bold py-2 px-4 rounded mb-3 mt-3 ml-2"
             onClick={() => navigate("/dashboard/enrolled-courses")}
           >
             Go To Course
@@ -230,13 +248,13 @@ const Coursebuy = () => {
         ) : (
           <>
             <button
-              className="w-[400px] bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-2 px-4 rounded mb-3 mt-3 ml-2"
+              className="w-full md:w-[400px] bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-2 px-4 rounded mb-3 mt-3 ml-2"
               onClick={handlebuycourse}
             >
               Buy Now
             </button>
             <button
-              className="w-[400px] border bg-gray-900 border-gray-500 text-white font-bold py-2 px-4 rounded hover:bg-gray-700 ml-2 mt-2"
+              className="w-full md:w-[400px] border bg-gray-900 border-gray-500 text-white font-bold py-2 px-4 rounded hover:bg-gray-700 ml-2 mt-2"
               onClick={handleaddtocart}
             >
               Add to Cart
@@ -266,11 +284,13 @@ const Coursebuy = () => {
         </div>
       </div>
 
-      <div className="mt-11 ml-[450px]">
+      {/* <div className="mt-11 ml-[450px]"> */}
+      <div className="mt-11 px-4 md:ml-[450px]">
+
         <p className="text-3xl font-bold text-[#f16202]">Author</p>
         <div className="flex gap-2 mt-4">
           <img
-            src={user?.image || "/default-avatar.png"}
+            src={instructor?.image || "/default-avatar.png"}
             alt="Profile"
             className="w-16 h-16 rounded-full object-cover border border-gray-600"
           />

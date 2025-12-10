@@ -10,3 +10,22 @@
   }
 }
 
+
+
+/* ✅ Scrollbar hide but scrolling enabled */
+
+/* Chrome, Safari, Edge ke liye */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* optional */
+}
+
+/* Firefox ke liye */
+html {
+  scrollbar-width: none;
+}
+
+/* IE aur old Edge ke liye */
+body {
+  -ms-overflow-style: none;
+}

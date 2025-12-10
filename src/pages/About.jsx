@@ -16,7 +16,7 @@ import ReviewSliderdo from "./slider/ReviewSliderdo";
 const About = () => {
   return (
     <div className="text-white bg-[#121212] items-center justify-between">
-      {/* section_1 */}
+      
      
 
 <section className="relative">
