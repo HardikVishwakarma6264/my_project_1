@@ -26,10 +26,16 @@ cloudinaryConnect();
 // middleware
 app.use(express.json());
 app.use(cookieparser());
+// app.use(cors({
+//   origin: "http://localhost:3000",
+//   credentials: true,
+// }));
+
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: "*",
   credentials: true,
 }));
+
 
 app.use(
   fileupload({
