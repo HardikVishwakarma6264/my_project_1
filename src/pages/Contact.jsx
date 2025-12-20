@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <div className="bg-[#121212] text-white min-h-screen">
       {/* Contact Section */}
-      <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-8 px-6 py-12 max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-8 md:px-6 px-3 md:py-12 py-6 max-w-6xl mx-auto">
         {/* LEFT SECTION */}
         <div className="bg-gray-800 p-6 rounded-lg flex flex-col gap-6 w-full md:w-1/3">
           <div>
@@ -210,8 +210,8 @@ export default function Contact() {
       </div>
 
       {/* Section 2 */}
-      <section className="mt-[50px] font-bold">
-  <h2 className="text-center text-4xl mb-6">
+      <section className="md:mt-[50px] mt-[25px] font-bold">
+  <h2 className="text-center text-3xl md:text-4xl mb-6">
     Reviews from other learners
   </h2>
 

@@ -59,7 +59,7 @@ export default function Contactform() {
         </p>
 
         {/* First and Last Name */}
-        <div className="flex gap-4 mb-4 mt-11">
+        <div className="flex gap-4 mb-4 md:mt-11">
           <div className="flex-1">
              <label className="block text-gray-300 mb-1">First Name</label>
             <input
@@ -87,7 +87,7 @@ export default function Contactform() {
         </div>
 
         {/* Email */}
-        <div className="mb-4 mt-8">
+        <div className="mb-4 md:mt-8">
           <label className="block text-gray-300 mb-1">Email Address</label>
           <input
             type="email"
@@ -101,7 +101,7 @@ export default function Contactform() {
         </div>
 
         {/* Phone Number */}
-         <div className="mb-4 mt-8">
+         <div className="mb-4 md:mt-8">
       <label className="block text-gray-300 mb-1">Phone Number</label>
       <div className="flex gap-2 ">
         <select
@@ -128,7 +128,7 @@ export default function Contactform() {
     </div>
 
         {/* Message */}
-        <div className="mb-6 mt-8">
+        <div className="mb-6 md:mt-8">
           <label className="block text-gray-300 mb-1">Message</label>
           <textarea
             rows="4"

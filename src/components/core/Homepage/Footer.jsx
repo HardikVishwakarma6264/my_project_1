@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "re
 
 const Footer = () => {
   return (
-    <footer className="bg-richblack-900 text-white px-6 sm:px-10 py-10 mt-[100px]">
+    <footer className="bg-richblack-900 text-white px-6 sm:px-10 md:py-10 md:mt-[100px] mt-[50px]">
       <div className="max-w-7xl mx-auto">
         {/* Top Section */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 pb-10 border-b border-richblack-700">

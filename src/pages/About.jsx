@@ -29,8 +29,8 @@ const About = () => {
   </div>
 
   {/* Content */}
-  <div className="relative z-10 max-w-[1200px] mx-auto text-center px-4 py-16">
-    <header className="mb-10">
+  <div className="relative z-10 max-w-[1200px] mx-auto text-center px-4 md:py-16 py-4">
+    <header className="md:mb-10 mb-5">
       <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
         Driving Innovation in Online Education for a
       </p>
@@ -45,7 +45,7 @@ const About = () => {
     </header>
 
     {/* Images */}
-    <div className="flex flex-col sm:flex-row justify-center gap-6">
+    <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6">
       <img
         src={abo_1}
         alt="About 1"
@@ -84,7 +84,7 @@ const About = () => {
      <section>
   <div className="flex flex-col">
     {/* First Part */}
-    <div className="flex flex-col md:flex-row items-center justify-center bg-[#121212] px-6 md:px-10 py-12 gap-10 md:gap-20 mt-10">
+    <div className="flex flex-col md:flex-row items-center justify-center bg-[#121212] px-6 md:px-10 md:py-12 gap-10 md:gap-20 mt-10">
       {/* Left Part */}
       <div className="max-w-[650px] text-white">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-red-500 mb-6">
@@ -108,7 +108,7 @@ const About = () => {
       </div>
 
       {/* Right Part */}
-      <div className="w-full sm:w-[400px] md:w-[500px] h-[220px] sm:h-[260px] md:h-[300px] flex justify-center items-center mt-8 md:mt-0">
+      <div className="w-full sm:w-[400px] md:w-[500px] h-[220px] sm:h-[260px] md:h-[300px] flex justify-center items-center mt-2 md:mt-0">
         <img
           src={abo_4}
           alt="Founding Story"
@@ -118,7 +118,7 @@ const About = () => {
     </div>
 
     {/* Second Part */}
-    <div className="bg-[#121212] text-white py-12 px-6 md:px-10 flex items-center">
+    <div className="bg-[#121212] text-white md:py-12 py-6 px-6 md:px-10 flex items-center">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 w-full max-w-[1200px]">
         {/* Left Div */}
         <div>
@@ -175,7 +175,7 @@ const About = () => {
       {/* section_7 */}
       {/* section_7 */}
 <section className="mt-[50px] font-bold">
-  <h2 className="text-center text-4xl mb-6">
+  <h2 className="text-center text-3xl md:text-4xl mb-6">
     Reviews from other learners
   </h2>
 

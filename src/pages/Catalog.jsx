@@ -39,7 +39,7 @@ const Catalog = () => {
   return (
     <div className="text-white">
       {/* Header */}
-      <div className="w-full h-[250px] bg-gray-800 flex items-center">
+      <div className="w-full md:h-[250px] h-[150px] bg-gray-800 flex items-center">
         <div className="max-w-6xl px-6 md:px-12">
           <p>
             {`Home / Catalog / `}
@@ -47,7 +47,7 @@ const Catalog = () => {
               {catalogpagedata?.data?.selectedCategory?.name}
             </span>
           </p>
-          <p className="mt-4 text-2xl md:text-4xl font-semibold">
+          <p className="mt-4 text-3xl md:text-4xl font-semibold">
             {catalogpagedata?.data?.selectedCategory?.name}
           </p>
           <p className="mt-4 text-sm md:text-base">

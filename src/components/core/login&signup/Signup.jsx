@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import axios from "axios";
 import { GoogleLogin } from "@react-oauth/google";
+import hard_img from "../../../images/hard_img.jpg"
 
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -64,14 +65,25 @@ const Signup = () => {
 
 
   return (
-    <div className="mt-11 bg-[#121212] flex justify-center items-center text-white">
-      <div className="flex flex-col md:flex-row bg-[#121212] rounded-xl shadow-lg w-[1500px] h-[750px] overflow-hidden justify-evenly">
+    <div className="md:mt-11 overflow-hidden  bg-[#121212] flex justify-center items-center text-white">
+      <div className="flex flex-col md:flex-row bg-[#121212] rounded-xl shadow-lg w-[1500px] md:h-[750px] overflow-hidden justify-evenly">
         {/* Left Side - Form */}
-        <div className="p-8">
-          <h2 className="text-3xl font-bold mb-2">
+        <div className="md:p-8 p-3">
+
+<div className="flex md:hidden justify-center mb-6">
+  <img
+    src={hard_img}   // ya apna logo image
+    alt="Logo"
+    className="w-32 h-auto rounded-full shadow-lg"
+  />
+</div>
+
+          <h2 className="hidden md:block md:text-3xl text-xl font-bold mb-2">
             Join the millions learning to code <br /> with HardikNotion for free
           </h2>
-          <p className="text-gray-400 text-[20px] mb-6">
+
+
+          <p className="hidden md:block text-gray-400 text-[20px] mb-6">
             Build skills for today, tomorrow, and beyond.
             <br />
             <span className="text-blue-400 italic">
@@ -79,8 +91,11 @@ const Signup = () => {
             </span>
           </p>
 
+
+
           {/* Account Type Tabs */}
-          <div className="flex gap-4 mb-6">
+          <div className="flex gap-4 mb-6 justify-center md:justify-start">
+
             <button
               type="button"
               className={`px-4 py-2 rounded-full border ${
@@ -236,25 +251,25 @@ const Signup = () => {
           </form>
 
           {/* OR Divider */}
-          <div className="flex items-center my-4">
+          {/* <div className="flex items-center my-4">
             <hr className="flex-grow border-gray-600" />
             <span className="px-2 text-gray-400">OR</span>
             <hr className="flex-grow border-gray-600" />
-          </div>
+          </div> */}
 
           {/* Google Sign Up */}
-          <button className="w-full border border-gray-500 text-white py-2 rounded-md flex justify-center items-center gap-2 hover:bg-gray-700 transition">
+          {/* <button className="w-full border border-gray-500 text-white py-2 rounded-md flex justify-center items-center gap-2 hover:bg-gray-700 transition">
             <img
               src="https://www.svgrepo.com/show/475656/google-color.svg"
               alt="Google"
               className="w-5 h-5"
             />
             Sign Up with Google
-          </button>
+          </button> */}
         </div>
 
         {/* Right Side - Image */}
-        <div className="w-[500px] h-[500px] mt-10">
+        <div className="hidden md:block w-[500px] h-[500px] mt-10">
           <img
             src={image_5}
             alt="Students"

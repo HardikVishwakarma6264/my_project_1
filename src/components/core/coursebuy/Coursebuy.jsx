@@ -121,7 +121,7 @@ const Coursebuy = () => {
       {/* <div className="h-[450px] w-full bg-gray-700  ">
         <div className="w-[550px] h-[300px]  ml-[500px] relative top-[130px] "> */}
         <div className="h-auto md:h-[450px] w-full bg-gray-700 px-4">
-  <div className="w-full md:w-[550px] h-auto md:h-[300px] mx-auto md:ml-[500px] relative top-8 md:top-[130px]">
+  <div className="w-full md:w-[550px] h-auto md:h-[300px] mx-auto md:ml-[500px] relative top-2 md:top-[130px] flex flex-col items-center justify-center">
 
           <h1 className="text-xl md:text-2xl lg:text-4xl font-bold">{coursename}</h1>
           <p className="text-lg md:text-xl lg:text-2xl mt-4">{`${coursename} By ${instructor?.firstname} ${instructor?.lastname}`}</p>
@@ -140,8 +140,8 @@ const Coursebuy = () => {
             </span>
           </div>
 
-          <p className="text-lg md:text-xl lg:text-2xl mt-4">{`By ${instructor?.firstname} ${instructor?.lastname}`}</p>
-          <p className="text-base md:text-lg lg:text-xl mt-4 flex items-center gap-2">
+          {/* <p className="text-lg md:text-xl lg:text-2xl mt-4">{`By ${instructor?.firstname} ${instructor?.lastname}`}</p> */}
+          <p className="text-base md:text-lg lg:text-xl mt-3 md:mt-4 flex items-center gap-2">
             <AiOutlineClockCircle size={20} />
             Created at {createdDate.toLocaleDateString()}{" "}
             {createdDate.toLocaleTimeString([], {
@@ -263,7 +263,7 @@ const Coursebuy = () => {
         )}
 
         <div className=" text-sm text-gray-400">
-          <p className="text-[20px] text-white ml-[65px] mt-8">
+          <p className="md:text-[20px] text-[15px] text-white ml-[65px] mt-8">
             1-Day Money-Back Guarantee
           </p>
           <p className="mt-6 text-[20px] text-white ml-5">
