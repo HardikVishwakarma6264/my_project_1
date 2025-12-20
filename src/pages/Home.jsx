@@ -65,7 +65,7 @@ const Home = () => {
         {/* Video Section with Glow */}
         <div className="relative inline-block my-5 md:my-11 mx-3 w-full max-w-[1050px]">
           {/* Blurred Circle Glow at Top Center */}
-          <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-40 sm:w-64 h-40 sm:h-64 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 blur-3xl opacity-50"></div>
+          <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-40 sm:w-64 h-45 sm:h-64 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 blur-3xl opacity-50"></div>
 
           {/* Video Container with Soft Shadow */}
           <div className="relative rounded-md shadow-[20px_20px_60px_rgba(255,255,255,0.25)]">
@@ -75,7 +75,10 @@ const Home = () => {
               autoPlay
               className="w-full h-auto rounded-md object-cover"
             >
-              <source src={video_1} type="video/mp4" />
+              <source
+               src="https://res.cloudinary.com/dfhqweit4/video/upload/v1766236823/video_1_ppvnhl.mp4"
+  type="video/mp4"
+                />
             </video>
           </div>
         </div>
