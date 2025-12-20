@@ -14,6 +14,8 @@ const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [accountType, setAccountType] = useState("Student");
+  const [passkey, setPasskey] = useState("");
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -40,6 +42,12 @@ const Signup = () => {
     return;
   }
 
+  if (accountType === "Instructor" && passkey !== "chotu") {
+  toast.error("Invalid Instructor Passkey");
+  return;
+}
+
+
   const staged = { ...formData, accountType };
   dispatch(setSignupData(staged));
   localStorage.setItem("signupData", JSON.stringify(staged));
@@ -57,7 +65,7 @@ const Signup = () => {
 
   return (
     <div className="mt-11 bg-[#121212] flex justify-center items-center text-white">
-      <div className="flex flex-col md:flex-row bg-[#121212] rounded-xl shadow-lg w-[1500px] h-[700px] overflow-hidden justify-evenly">
+      <div className="flex flex-col md:flex-row bg-[#121212] rounded-xl shadow-lg w-[1500px] h-[750px] overflow-hidden justify-evenly">
         {/* Left Side - Form */}
         <div className="p-8">
           <h2 className="text-3xl font-bold mb-2">
@@ -199,6 +207,24 @@ const Signup = () => {
                 </span>
               </div>
             </div>
+
+            {accountType === "Instructor" && (
+  <div>
+    <label className="block mb-1 text-sm font-medium">
+      Instructor Passkey <span className="text-red-500">*</span>
+    </label>
+    <input
+      type="password"
+      value={passkey}
+      onChange={(e) => setPasskey(e.target.value)}
+      placeholder="Enter Instructor Passkey"
+      className="w-full px-4 py-2 bg-[#2A2A2A] border border-gray-600 rounded-md 
+                 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      required
+    />
+  </div>
+)}
+
 
             {/* Submit Button */}
             <button

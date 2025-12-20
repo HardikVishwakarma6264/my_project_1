@@ -48,8 +48,14 @@ exports.sendotp = async (req, res) => {
     console.log("OTP Saved:", otpBody);
 
     const { title, body } = otpMailTemplate(otp);
-    await mailSender(email, title, body);
+    const mailResponse=await mailSender(email, title, body);
 
+    if (!mailResponse) {
+  return res.status(500).json({
+    success: false,
+    message: "Failed to send OTP email. Please try again.",
+  });
+}
     // send response
     res.status(200).json({
       success: true,
