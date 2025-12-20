@@ -30,7 +30,7 @@ const Learninglanguagesection = () => {
       />
     </div>
 
-    <div className='w-fit ali' >
+    <div className='w-fit ali mb-3' >
       <Button active={true} linkto={"/signup"}>
        <div>
           Learn more

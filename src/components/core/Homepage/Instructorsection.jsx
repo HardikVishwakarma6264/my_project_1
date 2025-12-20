@@ -54,7 +54,7 @@ import image from "../../../images/img_7.jpg"; // Update path
 
 const InstructorSection = () => {
   return (
-    <div className="mt-12 w-full bg-richblack-900 flex flex-col md:flex-row items-center justify-center gap-6 px-6 md:px-20 py-16">
+    <div className="mt-12 w-full bg-richblack-900 flex flex-col md:flex-row items-center justify-center gap-6 px-6 md:px-20 md:py-16">
       {/* Left Image Section */}
       <div className="w-full md:w-1/2 flex justify-center">
         <img

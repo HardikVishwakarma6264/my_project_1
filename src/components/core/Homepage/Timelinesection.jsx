@@ -76,10 +76,10 @@ const Timelinesection = () => {
 
 
         {/* Overlay */}
-        <div className="absolute bg-gray-800 flex flex-col sm:flex-row justify-between text-white uppercase py-5 px-6 sm:py-7 sm:px-10 left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 rounded-lg shadow-md w-[90%] max-w-[400px]">
+        <div className="absolute bg-gray-800 flex flex-col sm:flex-row justify-between text-white uppercase py-5 px-6 sm:py-7 sm:px-10 left-1/2 md:bottom-0 -bottom-12  transform -translate-x-1/2 translate-y-1/2 rounded-lg shadow-md w-[90%] max-w-[400px]">
           {/* Box 1 */}
           <div className="flex flex-row gap-4 items-center sm:border-r border-gray-600 pr-6 mb-4 sm:mb-0">
-            <p className="text-3xl font-bold">0</p>
+            <p className="text-3xl font-bold">1</p>
             <p className="text-green-300 text-sm leading-tight">
               Years of Experience
             </p>
@@ -87,7 +87,7 @@ const Timelinesection = () => {
 
           {/* Box 2 */}
           <div className="flex flex-row gap-4 items-center pl-0 sm:pl-6">
-            <p className="text-3xl font-bold">0</p>
+            <p className="text-3xl font-bold">24</p>
             <p className="text-green-300 text-sm leading-tight">
               Type of Courses
             </p>

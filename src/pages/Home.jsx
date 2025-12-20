@@ -52,7 +52,7 @@ const Home = () => {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8">
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 sm:gap-6 mt-5 md:mt-8">
           <Ctabutton active={true} linkto={"/signup"}>
             Learn More
           </Ctabutton>
@@ -63,7 +63,7 @@ const Home = () => {
         </div>
 
         {/* Video Section with Glow */}
-        <div className="relative inline-block my-11 mx-3 w-full max-w-[1050px]">
+        <div className="relative inline-block my-5 md:my-11 mx-3 w-full max-w-[1050px]">
           {/* Blurred Circle Glow at Top Center */}
           <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-40 sm:w-64 h-40 sm:h-64 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 blur-3xl opacity-50"></div>
 
@@ -82,7 +82,7 @@ const Home = () => {
         
 
         {/* Codeblocks Section */}
-       <div className="w-full">
+       <div className="w-full ">
   <Codeblocks
     position={"lg:flex-row"}
     heading={
@@ -108,6 +108,15 @@ const Home = () => {
     circlecolor={"bg-yellow-300"} // 👈 circle yellow
   />
 </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -142,17 +151,40 @@ const Home = () => {
 </div>
 
 
-        <Exploremore />
+        {/* <Exploremore /> */}
       </div>
+
+    <div className="relative mx-auto hidden md:flex flex-col w-11/12 items-center text-white">
+  <Exploremore />
+</div>
+
+        
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* section_2 */}
       <div className="bg-white text-black mt-4">
-        <div className="w-11/12 max-w-maxContent flex flex-col items-center justify-between mx-auto gap-10">
+        <div className="w-11/12 max-w-maxContent flex flex-col items-center justify-between mx-auto md:gap-10">
           {/* Top Empty Spacer */}
           <div className="h-[100px] sm:h-[180px]"></div>
 
           {/* Buttons Section */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 text-white">
+          <div className="flex flex-row sm:flex-row gap-4 sm:gap-7 text-white">
             <Ctabutton active={true} linkto={"/signup"}>
               <div className="flex items-center gap-3">
                 Explore Full Catalog
@@ -165,6 +197,14 @@ const Home = () => {
             </Ctabutton>
           </div>
         </div>
+
+
+
+
+
+
+
+
 
         <div className="mx-auto w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-7">
           <div className="flex flex-col lg:flex-row gap-5 mb-10 mt-[50px] lg:mt-[95px] justify-evenly">
