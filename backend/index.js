@@ -34,6 +34,7 @@ app.use(cookieparser());
 const allowedOrigins = [
   "http://localhost:3000",
   "https://my-project-1-sigma.vercel.app",
+   "https://hardiknotion.hardikvish.me",
 ];
 
 app.use(cors({
