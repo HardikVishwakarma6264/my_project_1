@@ -31,10 +31,22 @@ app.use(cookieparser());
 //   credentials: true,
 // }));
 
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://my-project-1-sigma.vercel.app",
+];
+
 app.use(cors({
-  origin: "*",
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true,
 }));
+
 
 
 app.use(
