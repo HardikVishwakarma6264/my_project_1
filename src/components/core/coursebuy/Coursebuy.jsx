@@ -74,7 +74,7 @@ const Coursebuy = () => {
     if (!token) {
       // Agar student login nahi hai to signup page pe bhej do
       navigate("/signup");
-      toast.error("Please first signup do....");
+      toast.error("Please first login....");
       return;
     }
 

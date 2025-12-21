@@ -92,7 +92,7 @@ order_id: orderresponse.data.order.id,
     paymentObject.open();
   } catch (error) {
     // console.log("PAYMENT API ERROR........->", error);
-    toast.error("Could not make payment");
+    toast.error("You are instructor, So not buy course..");
   }
   toast.dismiss(toastid);
 }

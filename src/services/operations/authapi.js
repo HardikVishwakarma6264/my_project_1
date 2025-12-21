@@ -382,7 +382,7 @@ export async function getUserEnrolledCourses(token) {
     if (!response.data.success) {
       throw new Error(response.data.message);
     }
-    toast.success("cousee test successfullt....");
+    // toast.success("course test....");
 
     result = response.data.data;
   } catch (error) {
