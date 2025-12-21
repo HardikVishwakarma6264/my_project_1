@@ -16,7 +16,7 @@ const [loading,setloading]=useState();
 useEffect(()=>{
   const populatecoursedetail=async()=>{
     const result=await getFullCourseDetailsAuth(courseid,token)
-    console.log("COURSE RESULT a gaya:", result);
+    // console.log("COURSE RESULT a gaya:", result);
     if(result?.coursedetails){
       dispatch(setEditCourse(true));
       dispatch(setCourse(result?.coursedetails));

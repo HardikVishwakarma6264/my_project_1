@@ -41,7 +41,7 @@ const Coursebuy = () => {
     const fetchData = async () => {
       const data = await getCourseDetails(courseId);
       setCourseData(data);
-      console.log("jo data aya dekna ke liye wo->", data);
+      // console.log("jo data aya dekna ke liye wo->", data);
     };
     fetchData();
   }, [courseId]);

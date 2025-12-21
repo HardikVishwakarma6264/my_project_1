@@ -56,7 +56,7 @@ const Signup = () => {
   try {
     const result = await dispatch(sendOtp(formData.email, navigate));
     if (result) {
-      console.log("OTP sent, navigating to /verify-email");
+      // console.log("OTP sent, navigating to /verify-email");
     }
   } catch (err) {
     console.error("Error sending OTP:", err);

@@ -54,7 +54,7 @@ export async function buycourse({
         Authorization: `Bearer ${token}`,
       }
     );
-    console.log("ORDER RESPONSE aya", orderresponse.data);
+    // console.log("ORDER RESPONSE aya", orderresponse.data);
 
 
     if (!orderresponse.data.success) {
@@ -91,7 +91,7 @@ order_id: orderresponse.data.order.id,
     const paymentObject = new window.Razorpay(options);
     paymentObject.open();
   } catch (error) {
-    console.log("PAYMENT API ERROR........->", error);
+    // console.log("PAYMENT API ERROR........->", error);
     toast.error("Could not make payment");
   }
   toast.dismiss(toastid);
@@ -114,7 +114,7 @@ export const sendpaymentsuccessemail = async (orderid, paymentid, amount, token)
 
     return response.data;
   } catch (error) {
-    console.error("❌ Payment success email error:", error.response?.data || error.message);
+    // console.error("❌ Payment success email error:", error.response?.data || error.message);
     throw error;
   }
 };

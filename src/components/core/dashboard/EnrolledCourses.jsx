@@ -16,9 +16,9 @@ const EnrolledCourses = () => {
     try {
       const response = await getUserEnrolledCourses(token);
       setEnrolledCourses(response);
-      console.log("dekane ke liye jo data ya->", response);
+      // console.log("dekane ke liye jo data ya->", response);
     } catch (error) {
-      console.log("Unable to fetch enrolled courses", error);
+      // console.log("Unable to fetch enrolled courses", error);
     }
   };
 

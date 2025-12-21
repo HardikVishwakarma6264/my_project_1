@@ -28,7 +28,7 @@ const ReviewSliderdo = () => {
           setReview(data.data)
         }
       } catch (err) {
-        console.log("Error while fetching reviews", err)
+        // console.log("Error while fetching reviews", err)
       }
     }
 

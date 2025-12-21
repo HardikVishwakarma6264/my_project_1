@@ -13,18 +13,18 @@ export default function Contactform() {
   } = useForm();
 
   const submitcontactform=async(data)=>{
-    console.log("logging Data->",data);
+    // console.log("logging Data->",data);
     try{
      
       // const response=await apiconnector("POST",);
       const response={status:"ok"};
-      console.log("logging data->",response);
+      // console.log("logging data->",response);
       
       toast.success("Information send");
 
 
     }catch(error){
-        console.log("error aye h->",error.message);
+        // console.log("error aye h->",error.message);
         toast.error(error.response?.data?.message || "Something went wrong");
 
 

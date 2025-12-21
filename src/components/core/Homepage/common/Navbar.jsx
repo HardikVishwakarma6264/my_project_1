@@ -23,7 +23,7 @@ const Navbar = () => {
       const result = await apiconnector("GET", categories.CATEGORIES_API);
       setCategoriesData(result?.data?.allTags || []);
     } catch (error) {
-      console.log("Could not fetch category list", error);
+      // console.log("Could not fetch category list", error);
     }
   };
 

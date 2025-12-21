@@ -21,7 +21,7 @@ export function sendOtp(email, navigate) {
     try {
       const response = await apiconnector("POST", sendotps.SEND_OTP, { email });
 
-      console.log("SEND OTP RESPONSE:", response);
+      // console.log("SEND OTP RESPONSE:", response);
 
       if (!response.data.success) {
         throw new Error(response.data.message);
@@ -32,7 +32,7 @@ export function sendOtp(email, navigate) {
 
       return true;  // ✅ success return
     } catch (error) {
-      console.log("SEND OTP ERROR:", error);
+      // console.log("SEND OTP ERROR:", error);
       toast.error(error.response?.data?.message || "Failed to send OTP");
       return false; // ✅ failure return
     } finally {
@@ -86,7 +86,7 @@ export function signupuser(
 
       // ✅ Signup API call
       const response = await apiconnector("POST", signup.SIGNUPJI, payload);
-      console.log("SIGNUP RESPONSE:", response);
+      // console.log("SIGNUP RESPONSE:", response);
 
       if (!response?.data?.success) {
         throw new Error(response?.data?.message || "Signup failed");
@@ -102,7 +102,7 @@ export function signupuser(
       await dispatch(loginuser(email, password, navigate));
 
     } catch (error) {
-      console.log("SIGNUP ERROR:", error);
+      // console.log("SIGNUP ERROR:", error);
       toast.error(error?.response?.data?.message || error.message || "Signup Failed");
     } finally {
       toast.dismiss(toastId);
@@ -120,7 +120,7 @@ export function loginuser(email, password, navigate) {
         password,
       });
 
-      console.log("LOGIN API RESPONSE:", response);
+      // console.log("LOGIN API RESPONSE:", response);
 
       if (!response?.data?.success) {
         throw new Error(response?.data?.message || "Login failed");
@@ -138,7 +138,7 @@ export function loginuser(email, password, navigate) {
         : `https://api.dicebear.com/5.x/initials/svg?seed=${user.firstName} ${user.lastName}`;
 
       dispatch(setUser({ ...user, image: userImage }));
-      console.log("setuser data->", user);
+      // console.log("setuser data->", user);
 
       localStorage.setItem("token", JSON.stringify(token));
       localStorage.setItem("user", JSON.stringify({ ...user, image: userImage }));
@@ -161,7 +161,7 @@ export function getPasswordResetToken(email, setEmailSent) {
     try {
       const response = await apiconnector("POST", resetpassword.RESET_PASSWORD, { email });
 
-      console.log("RESET PASSWORD TOKEN RESPONSE:", response);
+      // console.log("RESET PASSWORD TOKEN RESPONSE:", response);
 
       if (!response.data.success) {
         throw new Error(response.data.message);
@@ -172,7 +172,7 @@ export function getPasswordResetToken(email, setEmailSent) {
       toast.success("Reset Email Sent");
       setEmailSent(true);
     } catch (error) {
-      console.log("RESET PASSWORD TOKEN ERROR:", error);
+      // console.log("RESET PASSWORD TOKEN ERROR:", error);
 
       // Error hone par previous toast dismiss karke error show karo
       toast.dismiss(toastId);
@@ -191,7 +191,7 @@ export function resetPasswordAPI(newPassword, confirmPassword, token,navigate) {
         token,
       });
 
-      console.log("RESET PASSWORD RESPONSE:", response);
+      // console.log("RESET PASSWORD RESPONSE:", response);
 
       if (!response.data.success) {
         throw new Error(response.data.message);
@@ -201,7 +201,7 @@ export function resetPasswordAPI(newPassword, confirmPassword, token,navigate) {
       toast.success("Password Reset Successfully!");
        navigate("/reset-success");
     } catch (error) {
-      console.log("RESET PASSWORD ERROR:", error);
+      // console.log("RESET PASSWORD ERROR:", error);
       toast.dismiss(toastId);
       toast.error("Failed to reset password");
     }
@@ -228,7 +228,7 @@ export function handleImageUpload(file) {
         Authorization: `Bearer ${token}`,
       });
 
-      console.log("IMAGE UPLOAD RESPONSE:", response);
+      // console.log("IMAGE UPLOAD RESPONSE:", response);
 
       if (!response?.data?.success) {
         throw new Error(response?.data?.message || "Image upload failed");
@@ -244,7 +244,7 @@ export function handleImageUpload(file) {
       toast.dismiss(toastId);
       toast.success("Image uploaded successfully!");
     } catch (error) {
-      console.error("IMAGE UPLOAD ERROR:", error);
+      // console.error("IMAGE UPLOAD ERROR:", error);
       toast.dismiss(toastId);
       toast.error(error.response?.data?.message || "Image upload failed");
     }
@@ -267,7 +267,7 @@ export const updateProfile = (data) => {
         Authorization: `Bearer ${token}`,  // ✅ Pass token
       });
 
-      console.log("Update Success:", response);
+      // console.log("Update Success:", response);
 
       if (response.data.success) {
         dispatch({ type: "auth/setUser", payload: response.data.user });
@@ -279,7 +279,7 @@ export const updateProfile = (data) => {
       }
     } catch (error) {
       toast.dismiss();
-      console.log("Update Error:", error);
+      // console.log("Update Error:", error);
       toast.error("Something went wrong while updating");
     }
   };
@@ -306,7 +306,7 @@ export const updatePassword = (data) => {
         headers
       );
 
-      console.log("Update Password Response:", response);
+      // console.log("Update Password Response:", response);
 
       if (response.data.success) {
         toast.success("Password updated successfully");
@@ -314,7 +314,7 @@ export const updatePassword = (data) => {
         toast.error(response.data.message || "Something went wrong");
       }
     } catch (error) {
-      console.log("Update Password Error:", error);
+      // console.log("Update Password Error:", error);
       toast.error(error.response?.data?.message || "Update failed");
     } finally {
       toast.dismiss(toastId);
@@ -374,10 +374,10 @@ export async function getUserEnrolledCourses(token) {
       }
     );
 
-    console.log(
-      "GET_USER_ENROLLED_COURSES_API API RESPONSE............",
-      response
-    );
+    // console.log(
+    //   "GET_USER_ENROLLED_COURSES_API API RESPONSE............",
+    //   response
+    // );
 
     if (!response.data.success) {
       throw new Error(response.data.message);
@@ -386,7 +386,7 @@ export async function getUserEnrolledCourses(token) {
 
     result = response.data.data;
   } catch (error) {
-    console.log("GET_USER_ENROLLED_COURSES_API API ERROR............", error);
+    // console.log("GET_USER_ENROLLED_COURSES_API API ERROR............", error);
     toast.error("Could not fetch enrolled courses");
   }
   toast.dismiss(toastId);

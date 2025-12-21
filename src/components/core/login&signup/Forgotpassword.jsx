@@ -11,7 +11,7 @@ const Forgotpassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Reset Password Email:", email);
+    // console.log("Reset Password Email:", email);
     //password bul gaya h to usko reset karna h to api laga 
     dispatch(getPasswordResetToken(email, setemailsend));
   };

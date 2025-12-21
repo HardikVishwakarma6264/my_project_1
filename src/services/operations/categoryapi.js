@@ -25,7 +25,7 @@ export const getcategoryapi = async (categoryid) => {
 
     result = response?.data;
   } catch (error) {
-    console.log("fetch course api ERROR......:", error);
+    // console.log("fetch course api ERROR......:", error);
     toast.error(error.message);
     result = error.response?.data;
   }

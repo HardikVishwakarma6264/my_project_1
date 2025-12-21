@@ -25,7 +25,7 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data ->", formData);
+    // console.log("Form Data ->", formData);
 
     // ✅ dispatch login function
     dispatch(loginuser(formData.email, formData.password, navigate));
