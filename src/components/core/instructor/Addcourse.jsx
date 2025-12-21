@@ -1,40 +1,4 @@
-// import React from "react";
-// import RenderSteps from "./RenderSteps";
 
-// const Addcourse = () => {
-//   return (
-//     <div className="min-h-screen bg-richblack-900 text-white">
-//       <div className="flex max-w-7xl mx-auto gap-8 px-6 py-8">
-//         {/* Left Section */}
-//         <div className="flex-1">
-//           <h1 className="text-3xl font-bold mb-11 ml-[-50px]">Add Course</h1>
-//           <RenderSteps />
-//         </div>
-
-//         {/* Right Sidebar */}
-//         <div className="hidden lg:block w-[450px] ">
-//           <div className="sticky top-10 bg-gray-800 p-6 rounded-2xl shadow-md ml-[-20px]">
-//             <p className="text-lg font-semibold mb-4 text-yellow-50 flex items-center gap-2">
-//               ⚡ Course Upload Tips
-//             </p>
-//             <ul className="list-disc list-inside space-y-3 text-base text-richblack-300">
-//                <li>Set the Course Price option or make it free.</li>
-//     <li>Standard size for the course thumbnail is 1024×576.</li>
-//     <li>Video section controls the course overview video.</li>
-//     <li>Course Builder is where you create & organize a course.</li>
-//     <li>Add Topics in the Course Builder section to create lessons, quizzes, and assignments.</li>
-//     <li>Information from the Additional Data section shows up on the course single page.</li>
-//     <li>Make Announcements to notify any important updates.</li>
-//     <li>Notes to all enrolled students at once.</li>
-//             </ul>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Addcourse;
 
 import React from "react";
 import RenderSteps from "./RenderSteps";
@@ -42,7 +6,7 @@ import RenderSteps from "./RenderSteps";
 const Addcourse = () => {
   return (
     <div className="min-h-screen bg-richblack-900 text-white">
-      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto gap-8 px-4 sm:px-6 py-8">
+      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto gap-8 md:px-4 sm:px-6 md:py-8">
         {/* Left Section */}
         <div className="flex-1">
           <h1 className="text-3xl font-bold mb-11 text-center lg:text-left">
@@ -53,7 +17,7 @@ const Addcourse = () => {
 
         {/* Right Sidebar */}
         <aside className="w-full lg:w-[450px]">
-          <div className="sticky top-10 bg-gray-800 p-6 rounded-2xl shadow-md">
+          <div className="sticky top-10 bg-gray-800 md:p-6 p-2 rounded-2xl shadow-md">
             <p className="text-lg font-semibold mb-4 text-yellow-50 flex items-center gap-2">
               ⚡ Course Upload Tips
             </p>

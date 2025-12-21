@@ -2,7 +2,7 @@ import React from "react";
 import * as Icons from "react-icons/vsc";
 import { NavLink, useLocation, matchPath } from "react-router-dom";
 
-const Sidebarlink = ({ link }) => {
+const Sidebarlink = ({ link,onClick }) => {
   const location = useLocation();
   const Icon = typeof link.icon === "string" ? Icons[link.icon] : link.icon;
 
@@ -15,6 +15,7 @@ const Sidebarlink = ({ link }) => {
   return (
     <NavLink
       to={link.path}
+       onClick={onClick}
       className={`group relative flex items-center gap-3 px-6 py-3 text-sm font-medium rounded-lg transition-all duration-200
         ${isActive ? "bg-red-400 text-white" : "text-gray-400 hover:bg-gray-800 hover:text-white"}
       `}

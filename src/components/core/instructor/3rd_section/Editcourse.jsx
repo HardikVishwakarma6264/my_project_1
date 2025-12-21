@@ -28,10 +28,10 @@ populatecoursedetail();
 
   return (
     <div className="min-h-screen bg-richblack-900 text-white">
-      <div className="flex max-w-7xl mx-auto gap-8 px-6 py-8">
+      <div className="flex max-w-7xl mx-auto gap-8 ms:px-6 md:py-8">
         {/* Left Section */}
         <div className="flex-1">
-          <h1 className="text-3xl font-bold mb-11 ml-[-50px]">Edit Course</h1>
+          <h1 className="text-3xl font-bold mb-11 md:ml-[-50px]">Edit Course</h1>
           {
             course ? <RenderSteps /> : <p className="text-white">Course not found</p>
           }

@@ -1,37 +1,4 @@
-// import React from "react";
-// import Imageuploder from "../dashboard/Imageuploder";
-// import { useDispatch } from "react-redux";
-// import { handleImageUpload } from "../../../services/operations/authapi";
-// import EditProfile from "./EditProfile";
-// import { updateProfile } from "../../../services/operations/authapi";
-// import UpdatePassword from "./UpdatePassword";
-// import DeleteAccount from "./DeleteAccount";
 
-// const Settings = () => {
-//   const dispatch = useDispatch();
-
-//   const uploadImage = (file) => {
-//     dispatch(handleImageUpload(file));
-//   };
-
-//   const handleSave = (data) => {
-//     dispatch(updateProfile(data));
-//   };
-
-//   return (
-//     <div className="p-6 text-white height:fix-content  ">
-//       <div className="items-center  flex flex-col">
-      
-//       <Imageuploder handleImageUpload={uploadImage} />
-//       <EditProfile onSave={handleSave} />
-//       <UpdatePassword/>
-//       <DeleteAccount/>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Settings;
 
 import React from "react";
 import Imageuploder from "../dashboard/Imageuploder";

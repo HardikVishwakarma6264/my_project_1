@@ -60,7 +60,7 @@ const Sidebar = () => {
                 user?.accounttype?.toLowerCase() !== link.type.toLowerCase()
               )
                 return null;
-              return <Sidebarlink key={link.id} link={link} />;
+              return <Sidebarlink key={link.id} link={link} onClick={() => setDrawerOpen(false)} />;
             })}
           </div>
 
@@ -72,9 +72,14 @@ const Sidebar = () => {
                 path: "/dashboard/settings",
                 icon: "VscSettingsGear",
               }}
+               onClick={() => setDrawerOpen(false)} 
             />
             <div
-              onClick={() => setShowModal(true)}
+              onClick={() => {
+  setShowModal(true);
+  setDrawerOpen(false);   // 👈 ADD
+}}
+              
               className="mt-2 flex items-center gap-3 px-8 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-red-600 cursor-pointer transition-all"
             >
               <VscSignOut className="text-lg" />
