@@ -50,8 +50,8 @@ export default function Settings() {
   const handleSave = (data) => dispatch(updateProfile(data));
 
   return (
-    <div className="p-4 md:p-6 text-white flex justify-center">
-      <div className="flex flex-col items-center w-full max-w-[1050px] space-y-6">
+    <div className=" md:p-6 text-white flex justify-center">
+      <div className="flex flex-col items-center w-full max-w-[1050px] md:space-y-6 space-y-3">
         <Imageuploder handleImageUpload={uploadImage} />
         <EditProfile onSave={handleSave} />
         <UpdatePassword />

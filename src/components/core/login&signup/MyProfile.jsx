@@ -118,37 +118,39 @@ const MyProfile = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="text-white p-6 max-w-4xl mx-auto mt-12">
-      <h1 className="text-3xl font-bold mb-6">My Profile</h1>
+    <div className="text-white md:p-6 max-w-4xl mx-auto md:mt-12 ">
+      <h1 className="md:text-3xl text-2xl font-bold md:mb-6 mb-3">My Profile</h1>
 
       {user ? (
-        <div className="space-y-6">
+        <div className="md:space-y-6 space-y-3">
           {/* Profile Card */}
-          <div className="bg-gray-800 rounded-lg p-6 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="bg-gray-800 rounded-lg md:p-6 p-2 flex flex-row md:flex-row justify-between items-center md:gap-4 gap-1">
             <div className="flex items-center gap-4">
               <img
                 src={user.image || "/default-avatar.png"}
                 alt="Profile"
-                className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border border-gray-600"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border border-gray-600 "
               />
               <div>
                 <p className="text-lg font-semibold">
                   {user.firstname} {user.lastname}
                 </p>
-                <p className="text-gray-400 break-all">{user.email}</p>
+                {/* <p className="text-gray-400 break-all">{user.email}</p> */}
               </div>
             </div>
             <button
               onClick={() => navigate("/dashboard/settings")}
-              className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition flex items-center gap-2"
+              className="bg-yellow-400 text-black md:px-4 md:py-2 px-2 py-1 rounded-lg font-semibold hover:bg-yellow-500 transition flex items-center gap-2"
             >
               Edit <FiEdit />
             </button>
           </div>
 
+
+
           {/* About Section */}
-          <div className="bg-gray-800 rounded-lg p-6 flex flex-col md:flex-row justify-between items-start gap-4">
-            <div>
+          <div className="bg-gray-800 rounded-lg md:p-6 p-2 flex  md:flex-row justify-between items-start gap-4">
+            <div className="flex flex-col">
               <h2 className="text-xl font-semibold mb-2">About</h2>
               <p className="text-gray-400">
                 {user?.additionaldetail?.about || "Write Something About Yourself"}
@@ -156,19 +158,19 @@ const MyProfile = () => {
             </div>
             <button
               onClick={() => navigate("/dashboard/settings")}
-              className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition flex items-center gap-2"
+              className="bg-yellow-400 text-black md:px-4 md:py-2 px-2 py-1 rounded-lg font-semibold hover:bg-yellow-500 transition flex items-center mt-6 md:mt-0  gap-2"
             >
               Edit <FiEdit />
             </button>
           </div>
 
           {/* Personal Details */}
-          <div className="bg-gray-800 rounded-lg p-6">
+          <div className="bg-gray-800 rounded-lg md:p-6 p-2">
             <div className="flex flex-col md:flex-row justify-between mb-4 gap-4">
               <h2 className="text-xl font-semibold">Personal Details</h2>
               <button
                 onClick={() => navigate("/dashboard/settings")}
-                className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition flex items-center gap-2"
+                className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition  items-center gap-2 hidden md:block"
               >
                 Edit <FiEdit />
               </button>
@@ -200,7 +202,19 @@ const MyProfile = () => {
                 </div>
               ))}
             </div>
+            <div className="flex justify-end md:hidden ">
+  <button
+    onClick={() => navigate("/dashboard/settings")}
+    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition flex items-center gap-2"
+  >
+    Edit <FiEdit />
+  </button>
+</div>
           </div>
+
+
+
+
         </div>
       ) : (
         <p>No user data found</p>

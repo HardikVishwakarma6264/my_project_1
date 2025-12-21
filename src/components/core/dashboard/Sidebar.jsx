@@ -25,7 +25,7 @@ const Sidebar = () => {
   return (
     <>
       {/* ======= Mobile TOP BAR ======= */}
-      <div className="md:hidden flex items-start justify-between bg-[#121212] px-4 py-3 text-white shadow">
+      <div className="md:hidden flex items-start justify-between bg-[#121212] px-4 py-3  text-white shadow">
         {/* <h1 className="text-lg font-semibold">Dashboard</h1> */}
         <button onClick={() => setDrawerOpen(true)}>
           <RiMenuUnfold3Fill size={26} />

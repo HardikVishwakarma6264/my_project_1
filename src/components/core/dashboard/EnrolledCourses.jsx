@@ -28,7 +28,7 @@ const EnrolledCourses = () => {
   }, []);
 
   return (
-    <div className="text-white p-6 min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
+    <div className="text-white md:p-6 p-1 min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
       <h1 className="text-2xl md:text-3xl font-bold mb-6">📚 Enrolled Courses</h1>
 
       {/* Loading State */}
@@ -75,7 +75,7 @@ const EnrolledCourses = () => {
                     <img
                       src={course.thumbnail}
                       alt={course.coursename}
-                      className="w-20 h-14 object-cover rounded-md shadow-md"
+                      className="w-20 h-14 object-cover rounded-md shadow-md hidden md:block"
                     />
                     <div>
                       <p className="font-semibold text-white">
@@ -106,7 +106,7 @@ const EnrolledCourses = () => {
                         completed={course.progressPercentage || 0}
                         height="8px"
                         bgColor="#22c55e"
-                        baseBgColor="#374151"
+                        baseBgColor="#374151"a
                         isLabelVisible={false}
                         borderRadius="4px"
                       />
