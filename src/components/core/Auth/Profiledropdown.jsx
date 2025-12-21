@@ -54,11 +54,11 @@ const Profiledropdown = () => {
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 bg-gray-800 text-white rounded-lg shadow-lg p-2 z-50 w-56">
-          <p className="px-4 py-2 text-sm text-gray-300 truncate">
+        <div className="absolute right-0 mt-2 bg-gray-800 text-white rounded-lg shadow-lg p-2 z-50 md:w-56 ">
+          {/* <p className="px-4 py-2 text-sm text-gray-300 truncate">
             {user?.email || "No Email"}
-          </p>
-          <hr className="border-gray-600 my-2" />
+          </p> */}
+         
           <button
             onClick={() => {
               setIsOpen(false);
@@ -68,6 +68,7 @@ const Profiledropdown = () => {
           >
             Dashboard
           </button>
+          <hr className="border-gray-600   my-2" />
           <button
             onClick={() => {
               setIsOpen(false);
