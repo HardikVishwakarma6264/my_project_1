@@ -29,3 +29,9 @@ html {
 body {
   -ms-overflow-style: none;
 }
+
+/* Disable pull-to-refresh on mobile */
+html,
+body {
+  overscroll-behavior-y: contain;
+}
