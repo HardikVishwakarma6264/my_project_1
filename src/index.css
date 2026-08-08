@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -12,26 +12,41 @@
 
 
 
-/* ✅ Scrollbar hide but scrolling enabled */
 
-/* Chrome, Safari, Edge ke liye */
+
+
 ::-webkit-scrollbar {
   width: 0px;
-  background: transparent; /* optional */
+  background: transparent; 
 }
 
-/* Firefox ke liye */
+
 html {
   scrollbar-width: none;
 }
 
-/* IE aur old Edge ke liye */
+
 body {
   -ms-overflow-style: none;
 }
 
-/* Disable pull-to-refresh on mobile */
+
 html,
 body {
   overscroll-behavior-y: contain;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hover-effect {
+    @apply cursor-pointer transition-all duration-200 hover:text-blue-400 hover:scale-105;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
