@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Highlight from "./Highlight";
+// import Highlight from "./Highlight";
 import Button from "./Button";
 import { FaArrowRight } from "react-icons/fa";
 

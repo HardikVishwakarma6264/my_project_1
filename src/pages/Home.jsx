@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import Highlight from "../components/core/Homepage/Highlight";
 import Ctabutton from "../components/core/Homepage/Button";
-import video_1 from "../images/video_1.mp4";
+// import video_1 from "../images/video_1.mp4";
 import Codeblocks from "../components/core/Homepage/Codeblocks";
 import Timelinesection from "../components/core/Homepage/Timelinesection";
 import Learninglanguagesection from "../components/core/Homepage/Learninglanguagesection";
@@ -246,16 +246,5 @@ const Home = () => {
 export default Home;
 
 
-{/* <div className="h-[170px]">
-        <div className="flex gap-10  justify-center absolute right-[400px] ml-[350px]">
-          {courses.map((element, index) => (
-            <Coursecard
-              key={index}
-              carddata={element}
-              currentCard={currentCard}
-              setCurrentCard={setCurrentCard}
-            />
-          ))}
-        </div>
-      </div> */}
+
 

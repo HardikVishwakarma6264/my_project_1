@@ -9,7 +9,7 @@ import { buycourse } from "../../../services/operations/studentfeatureapi";
 import toast from "react-hot-toast";
 import RatingStars from "../Homepage/common/RatingStars";
 import { AiOutlineClockCircle } from "react-icons/ai";
-import { TbPlayCardStar, TbWorld } from "react-icons/tb";
+import { TbWorld } from "react-icons/tb";
 import { ACCOUNT_TYPE } from "../../../utils/constants";
 import { addToCart } from "../../../slices/cartSlice";
 import GetAvgRating from "../../../utils/avgRating";
@@ -57,9 +57,8 @@ const Coursebuy = () => {
     instructor,
     thumbnail,
     price,
-    coursedescription,
-    rating,
-    ratingandreview,
+    
+   
     createdAt,
     whatwillyoulearn,
     coursecontent = [],

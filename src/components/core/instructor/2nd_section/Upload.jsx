@@ -12,7 +12,7 @@ const Upload = ({
   viewdata = null,
   editdata = null,
 }) => {
-  const [file, setFile] = useState(null);
+  const [, setFile] = useState(null);
   const [preview, setPreview] = useState(viewdata || editdata || null);
   const [progress, setProgress] = useState(0);
 

@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import { apiconnector } from "../services/apiconnector";
 import { categories } from "../services/apis";
 import Courseslider from "./slider/Courseslider";
-import Course_Card from "./slider/Course_Card";
+import CourseCard from "./slider/Course_Card";
 
 const Catalog = () => {
   const { catalogname } = useParams();
@@ -90,7 +90,7 @@ const Catalog = () => {
           {catalogpagedata?.data?.mostSellingCourses
             ?.slice(0, 4)
             .map((course, index) => (
-              <Course_Card
+              <CourseCard
                 course={course}
                 key={index}
                 height={"h-[350px]"}

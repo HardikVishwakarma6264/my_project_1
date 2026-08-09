@@ -17,7 +17,7 @@ export default function Contactform() {
     try{
      
       // const response=await apiconnector("POST",);
-      const response={status:"ok"};
+      // const response={status:"ok"};
       // console.log("logging data->",response);
       
       toast.success("Information send");

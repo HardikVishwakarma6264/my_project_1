@@ -1,7 +1,7 @@
 import { apiconnector } from "../apiconnector";
 import { paymentenroll } from "../apis";
 import toast from "react-hot-toast";
-import hard_img from "../..//images/hard_img.jpg";
+// import hard_img from "../..//images/hard_img.jpg";
 import { clearCart } from "../../slices/cartSlice";
 import { setPaymentLoading } from "../../slices/courseSlice";
 

@@ -3,7 +3,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { IoArrowBackOutline } from "react-icons/io5";
 import { FaChevronDown } from "react-icons/fa";
 
@@ -11,7 +11,7 @@ const Viewsidebar = ({ setreviewmodal, closeSidebar }) => {
   const [activestate, setactivestate] = useState("");
   const [videobaractive, setvideobaraactive] = useState("");
   const navigate = useNavigate();
-  const location = useLocation();
+  // const location = useLocation();
   const { sectionId, subsectionId } = useParams();
 
   const { courseSectionData, courseEntireData, completedLectures } =

@@ -1,5 +1,5 @@
 import React from "react";
-import Highlight from "../components/core/Homepage/Highlight";
+// import Highlight from "../components/core/Homepage/Highlight";
 import abo_1 from "../images/abo_1.jpg";
 import abo_2 from "../images/abo_2.jpg";
 import abo_3 from "../images/abo_3.jpg";

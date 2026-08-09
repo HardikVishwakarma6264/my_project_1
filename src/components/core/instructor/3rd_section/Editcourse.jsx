@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom';
 import RenderSteps from "../RenderSteps";
@@ -10,20 +10,33 @@ const dispatch=useDispatch();
 const {course}=useSelector((state)=>state.course);
 const {token}=useSelector((state)=>state.auth);
 const {courseid}=useParams();
-const [loading,setloading]=useState();
+// const [loading,setloading]=useState();
 
 
-useEffect(()=>{
-  const populatecoursedetail=async()=>{
-    const result=await getFullCourseDetailsAuth(courseid,token)
-    // console.log("COURSE RESULT a gaya:", result);
-    if(result?.coursedetails){
+// useEffect(()=>{
+//   const populatecoursedetail=async()=>{
+//     const result=await getFullCourseDetailsAuth(courseid,token)
+//     // console.log("COURSE RESULT a gaya:", result);
+//     if(result?.coursedetails){
+//       dispatch(setEditCourse(true));
+//       dispatch(setCourse(result?.coursedetails));
+//     }
+//   }
+// populatecoursedetail();
+// },[])
+
+useEffect(() => {
+  const populatecoursedetail = async () => {
+    const result = await getFullCourseDetailsAuth(courseid, token);
+
+    if (result?.coursedetails) {
       dispatch(setEditCourse(true));
       dispatch(setCourse(result?.coursedetails));
     }
-  }
-populatecoursedetail();
-},[])
+  };
+
+  populatecoursedetail();
+}, [courseid, token, dispatch]);
 
 
   return (

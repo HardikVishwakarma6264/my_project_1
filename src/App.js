@@ -21,7 +21,7 @@ import Settings from "./components/core/dashboard/Settings";
 import Mycourse from "./components/core/instructor/Mycourse";
 import EnrolledCourses from "./components/core/dashboard/EnrolledCourses";
 import PurchaseHistory from "./components/core/dashboard/PurchaseHistory";
-import Cart from "./components/core/cart/Iindexx";
+// import Cart from "./components/core/cart/Iindexx";
 import { ACCOUNT_TYPE } from "./utils/constants";
 import Addcourse from "./components/core/instructor/Addcourse";
 import Instructor from "./components/core/instructor/Instructor";

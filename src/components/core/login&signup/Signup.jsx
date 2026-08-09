@@ -6,9 +6,9 @@ import toast from "react-hot-toast";
 import { setSignupData } from "../../../slices/authSlice";
 import { sendOtp } from "../../../services/operations/authapi";
 import { useNavigate } from "react-router-dom";
-import jwt_decode from "jwt-decode";
-import axios from "axios";
-import { GoogleLogin } from "@react-oauth/google";
+// import jwt_decode from "jwt-decode";
+// import axios from "axios";
+// import { GoogleLogin } from "@react-oauth/google";
 import hard_img from "../../../images/hard_img.jpg"
 
 const Signup = () => {

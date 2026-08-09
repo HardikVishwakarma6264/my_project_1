@@ -1,12 +1,12 @@
 import { toast } from "react-hot-toast";
-import { updateCompletedLectures } from "../../slices/viewCourseSlice";
+// import { updateCompletedLectures } from "../../slices/viewCourseSlice";
 import { apiconnector } from "../apiconnector";
 import { courseEndpoints } from "../apis";
 
 const {
   COURSE_DETAILS_API,
   COURSE_CATEGORIES_API,
-  GET_ALL_COURSE_API,
+  // GET_ALL_COURSE_API,
   CREATE_COURSE_API,
   EDIT_COURSE_API,
   CREATE_SECTION_API,

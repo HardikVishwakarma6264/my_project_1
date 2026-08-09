@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useCallback } from "react";
 import OtpInput from "react-otp-input";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -52,8 +52,37 @@ const VerifyEmailss = () => {
   }, [signupData, dispatch, navigate]);
 
   // 🔐 Submit handler
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (!signupData) return;
+
+  //   const {
+  //     accountType,
+  //     firstName,
+  //     lastName,
+  //     email,
+  //     password,
+  //     confirmPassword,
+  //   } = signupData;
+
+  //   dispatch(
+  //     signupuser(
+  //       accountType,
+  //       firstName,
+  //       lastName,
+  //       email,
+  //       password,
+  //       confirmPassword,
+  //       otp,
+  //       navigate
+  //     )
+  //   );
+  // };
+
+  const handleSubmit = useCallback(
+  (e) => {
     e.preventDefault();
+
     if (!signupData) return;
 
     const {
@@ -77,7 +106,9 @@ const VerifyEmailss = () => {
         navigate
       )
     );
-  };
+  },
+  [signupData, dispatch, navigate, otp]
+);
 
   // 🔁 Resend OTP + restart timer
   const handleResend = () => {
@@ -99,7 +130,7 @@ const VerifyEmailss = () => {
     if (otp.length === 6 && /^[0-9]{6}$/.test(otp)) {
       handleSubmit(new Event("submit"));
     }
-  }, [otp]);
+  }, [otp, handleSubmit]);
 
   return (
     <div className="bg-[#0a0a0a] text-white h-[800px] flex justify-center items-center">

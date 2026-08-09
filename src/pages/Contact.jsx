@@ -19,7 +19,7 @@ export default function Contact() {
     // console.log("logging Data->", data);
     try {
       // const response = await apiconnector("POST", ...);
-      const response = { status: "ok" };
+      // const response = { status: "ok" };
       // console.log("logging data->", response);
 
       toast.success("Thank's Your Information is sent");

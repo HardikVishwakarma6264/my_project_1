@@ -29,14 +29,31 @@ const Subsectionmodal = ({
   const { token } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
+  // useEffect(() => {
+  //   if (view || edit) {
+  //     setValue("lecturetitle", modaldata.title);
+  //     setValue("lecturedesc", modaldata.description);
+  //     setValue("lecturevideo", modaldata.videourl);
+  //     setValue("lecturetime", modaldata.timeduration);
+  //   }
+  // }, []);
+
   useEffect(() => {
-    if (view || edit) {
-      setValue("lecturetitle", modaldata.title);
-      setValue("lecturedesc", modaldata.description);
-      setValue("lecturevideo", modaldata.videourl);
-      setValue("lecturetime", modaldata.timeduration);
-    }
-  }, []);
+  if (view || edit) {
+    setValue("lecturetitle", modaldata.title);
+    setValue("lecturedesc", modaldata.description);
+    setValue("lecturevideo", modaldata.videourl);
+    setValue("lecturetime", modaldata.timeduration);
+  }
+}, [
+  view,
+  edit,
+  modaldata.title,
+  modaldata.description,
+  modaldata.videourl,
+  modaldata.timeduration,
+  setValue,
+]);
 
   const isformuploaded = () => {
     const currentvalue = getValues();
