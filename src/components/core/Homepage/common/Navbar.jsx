@@ -49,7 +49,7 @@ const Navbar = () => {
               alt="Logo"
             />
           </Link>
-          <p className="font-bold text-white text-[20px]">HardikNotion</p>
+          <p className="font-bold text-white text-[20px]">FutureNotion</p>
         </div>
 
         {/* Desktop Navbar Links */}

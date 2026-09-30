@@ -28,12 +28,12 @@ function coursePurchaseTemplate(studentName, courseName) {
         We’re excited to have you onboard 🚀. Start learning and enjoy your journey.
       </p>
 
-      <a href="https://your-platform-link.com/courses/${encodeURIComponent(
-        courseName
-      )}" 
-      style="display: inline-block; margin-top: 20px; padding: 12px 24px; background: #4facfe; color: white; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: clamp(14px, 4vw, 16px);">
-        Go to My Course
-      </a>
+      <a
+  href="https://hardiknotion.hardikvish.me/login"
+  style="display: inline-block; margin-top: 20px; padding: 12px 24px; background: #4facfe; color: white; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: clamp(14px, 4vw, 16px);"
+>
+  Go to My Course
+</a>
 
       <p style="color: #888; font-size: 14px; margin-top: 20px;" class="muted">
         If you face any issues, feel free to contact us.

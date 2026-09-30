@@ -79,7 +79,7 @@ const Signup = () => {
 </div>
 
           <h2 className="hidden md:block md:text-3xl text-xl font-bold mb-2">
-            Join the millions learning to code <br /> with HardikNotion for free
+            Join the millions learning to code <br /> with FutureNotion for free
           </h2>
 
 

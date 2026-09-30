@@ -54,7 +54,7 @@ function paymentSuccessTemplate(name, amount, orderId, paymentId) {
       </div>
 
       <!-- CTA -->
-      <a href="http://localhost:3000/dashboard"
+      <a href="https://hardiknotion.hardikvish.me/login"
         style="display: inline-block; margin-top: 20px; padding: 12px 28px; 
                background: linear-gradient(135deg, #43cea2, #185a9d);
                color: white; text-decoration: none; border-radius: 10px;

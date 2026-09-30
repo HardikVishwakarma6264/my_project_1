@@ -57,7 +57,7 @@ export default function Contact() {
               href="mailto:hardiknotion07@gmail.com"
               className="text-gray-400 transition-all duration-300 hover:text-blue-500 hover:scale-105 inline-block"
             >
-              hardiknotion07@gmail.com
+              Futurenotion07@gmail.com
             </a>
           </div>
 

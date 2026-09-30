@@ -39,7 +39,7 @@ const mailSender = async (email, title, body) => {
     const response = await axios.post(
       "https://api.resend.com/emails",
       {
-       from: "HardikNotion <support@hardikvish.me>",
+       from: "FutureNotion <support@hardikvish.me>",
         to: [email],
         subject: title,
         html: body,

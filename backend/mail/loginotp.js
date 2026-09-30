@@ -1,13 +1,13 @@
 function otpMailTemplate(otp) {
-  const title = "OTP Verification Email - BY->HardikNotion";
+  const title = "OTP Verification Email - BY->FutureNotion";
 
   const body = `
   <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; width: 100%; margin: auto; padding: 15px; background: #f9f9f9; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); box-sizing: border-box;" class="container">
     
     <div style="text-align: center; margin-bottom: 20px; background: linear-gradient(90deg, #ff7e5f, #feb47b); padding: 18px; border-radius: 15px 15px 0 0; color: white;" class="header">
-      <h1 style="margin: 0; font-size: clamp(22px, 5vw, 32px);" class="title">HardikNotion</h1>
+      <h1 style="margin: 0; font-size: clamp(22px, 5vw, 32px);" class="title">FutureNotion</h1>
       <p style="margin: 5px 0 0 0; font-size: clamp(12px, 3.5vw, 16px);" class="subtitle">
-        Your gateway to easy in HardikNotion
+        Your gateway to easy in FutureNotion
       </p>
     </div>
     

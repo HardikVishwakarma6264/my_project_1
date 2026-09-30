@@ -74,7 +74,7 @@ const InstructorSection = () => {
 
         {/* Description */}
         <p className="text-richblack-300 text-base sm:text-lg leading-relaxed">
-          Instructors from around the world teach millions of students on <br/>HardikNotion. 
+          Instructors from around the world teach millions of students on <br/>FutureNotion. 
           We provide the tools and skills to teach what you<br/> love.
         </p>
 

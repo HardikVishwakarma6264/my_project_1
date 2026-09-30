@@ -38,7 +38,7 @@ const About = () => {
         Brighter Future
       </h2>
       <p className="text-gray-300 mt-4 max-w-[800px] mx-auto text-sm sm:text-base md:text-lg">
-        HardikNotion is at the forefront of driving innovation in online
+        FutureNotion is at the forefront of driving innovation in online
         education. We're passionate about creating a brighter future by
         offering cutting-edge courses, leveraging emerging technologies.
       </p>

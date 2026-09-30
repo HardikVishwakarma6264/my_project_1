@@ -25,7 +25,7 @@ exports.resetpassswordtoken = async (req, res) => {
       { new: true }
     );
 
-    const url = `http://localhost:3000/update-password/${token}`;
+    const url = `https://hardiknotion.hardikvish.me/update-password/${token}`;
 
     const { title, body } = passwordreset({
       name: user.firstname,

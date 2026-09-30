@@ -106,7 +106,7 @@ const Home = () => {
       linkto: "/login",
       active: false,
     }}
-    codeblock={`<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="UTF-8">\n<title>HardikNotion</title>\n<link rel="style" href="style.css">\n</head>\n<meta charset="UTF-8">\n<p>HardikNotion</p>\n<h1>Empower Your Futhure</h1>\n</body>`}
+    codeblock={`<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="UTF-8">\n<title>FutureNotion</title>\n<link rel="style" href="style.css">\n</head>\n<meta charset="UTF-8">\n<p>FutureNotion</p>\n<h1>Empower Your Futhure</h1>\n</body>`}
     codecolor={"text-white"}     // 👈 code text white
     circlecolor={"bg-yellow-300"} // 👈 circle yellow
   />
@@ -218,7 +218,7 @@ const Home = () => {
 
             <div className="flex flex-col gap-6 w-full lg:w-[35%] items-center lg:items-start text-center lg:text-left">
               <div className="text-sm sm:text-base">
-                The modern HardikNotion dictates its own terms. Today, to be a competitive
+                The modern FutureNotion dictates its own terms. Today, to be a competitive
                 specialist requires more than professional skills.
               </div>
 

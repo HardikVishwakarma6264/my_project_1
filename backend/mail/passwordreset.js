@@ -1,5 +1,5 @@
 function passwordreset({ name = "User", resetLink, expiresInMinutes = 30 }) {
-  const title = "Reset Your Password - Hostel-9";
+  const title = "Reset Your Password - FutureNotion";
 
   const body = `
   <div style="font-family: Arial, 'Segoe UI', sans-serif; background:#f5f7fb; padding:24px;" class="outer">
@@ -7,7 +7,7 @@ function passwordreset({ name = "User", resetLink, expiresInMinutes = 30 }) {
       
       <!-- Header -->
       <div style="text-align:center; background:linear-gradient(90deg,#6a11cb,#2575fc); color:#fff; padding:24px;">
-        <h1 style="margin:0; font-size:clamp(20px, 5vw, 26px);">HardikNotion</h1>
+        <h1 style="margin:0; font-size:clamp(20px, 5vw, 26px);">FutureNotion</h1>
         <p style="margin:4px 0 0; font-size:clamp(12px, 3.5vw, 14px); opacity:0.9;">
           Secure Password Reset
         </p>
@@ -47,7 +47,7 @@ function passwordreset({ name = "User", resetLink, expiresInMinutes = 30 }) {
 
       <!-- Footer -->
       <div style="text-align:center; padding:12px; background:#fafafa; font-size:12px; color:#aaa;" class="footer">
-        © ${new Date().getFullYear()} Hostel-9
+        © ${new Date().getFullYear()} FutureNotion. All rights reserved.
       </div>
     </div>
   </div>

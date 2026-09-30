@@ -12,7 +12,7 @@ const Footer = () => {
           
           {/* Logo & Company */}
           <div>
-            <h2 className="text-white text-lg sm:text-xl font-bold">HardikNotion</h2>
+            <h2 className="text-white text-lg sm:text-xl font-bold">FutureNotion</h2>
             <p className="mt-2 text-sm">Company</p>
             <ul className="mt-4 space-y-2 text-[#6e7983] text-sm">
               <li className="hover-effect">About</li>
@@ -128,7 +128,8 @@ const Footer = () => {
             <span className="hover-effect">Terms</span>
           </div>
           <p className="text-[#6e7983] text-center">
-            Made with ❤️ CodeHelp © 2025 HardikNotion
+            {/* Made with ❤️ CodeHelp © 2025 HardikNotion */}
+            Made with ❤️ CodeHelp © 2025 FutureNotion
           </p>
         </div>
       </div>
